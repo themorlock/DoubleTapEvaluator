@@ -137,12 +137,13 @@ static inline int ctzl(unsigned long long num)
 #if __has_builtin(__builtin_ctzl)
     return __builtin_ctzl(num);
 #else
-    int count;
-    for(count = 0; count < 7 && !(num & 1); ++count)
+    int count = 0;
+    while ((num & 1) == 0)
     {
-        num >>= 1;
+        ++bits;
+        x >>= 1;
     }
-    return count;
+    return bits;
 #endif
 }
 
