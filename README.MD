@@ -32,9 +32,9 @@ $ unzip ../data/DOUBLETAP_TABLES_COMPRESSED.zip -d ../data/
 
 int main()
 {
-    doubletap_5_initialize("../data/DOUBLETAP_TABLE_5.dat");
-    doubletap_6_initialize("../data/DOUBLETAP_TABLE_6.dat");
-    doubletap_7_initialize("../data/DOUBLETAP_TABLE_7.dat");
+    doubletap_5_initialize("DOUBLETAP_TABLE_5.dat");
+    doubletap_6_initialize("DOUBLETAP_TABLE_6.dat");
+    doubletap_7_initialize("DOUBLETAP_TABLE_7.dat");
 
     unsigned long long hand5 = 34376582145ULL;
     doubletap_eval_5_fast(hand5);
