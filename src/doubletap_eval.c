@@ -138,12 +138,12 @@ static inline int ctzl(unsigned long long num)
     return __builtin_ctzl(num);
 #else
     int count = 0;
-    while ((num & 1) == 0)
+    while (!(num & 1))
     {
-        ++bits;
-        x >>= 1;
+        ++count;
+        num >>= 1;
     }
-    return bits;
+    return count;
 #endif
 }
 
