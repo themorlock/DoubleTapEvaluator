@@ -11,9 +11,9 @@
 $ cd DoubleTapEvaluator
 $ mkdir build
 $ cd build
-$ cmake ..
+$ cmake -DCMAKE_BUILD_TYPE=Release ..
 $ make
-$ unzip ../data/DOUBLETAP_TABLES_COMPRESSED.zip 
+$ unzip ../data/DOUBLETAP_TABLES_COMPRESSED.zip -d ../data/ 
 ```
 
 ### Benchmark:
