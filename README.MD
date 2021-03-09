@@ -23,8 +23,8 @@ $ unzip ../data/DOUBLETAP_TABLES_COMPRESSED.zip -d ../data/
 | All 6-Card Hands    |     221372489.5    |
 | All 7-Card Hands    |     235819763.9    |
 | Random 5-Card Hands |     161421182.3    |
-| Random 5-Card Hands |     167186224.5    |
-| Random 5-Card Hands |     132665991.9    |
+| Random 6-Card Hands |     167186224.5    |
+| Random 7-Card Hands |     132665991.9    |
 
 ### Usage:
 ```c
