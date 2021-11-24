@@ -2,22 +2,30 @@
 // Created by Saaketh Vangati on 3/7/21.
 //
 
+#include <locale.h>
 #include <stdio.h>
 #include <time.h>
 
 #include "../include/doubletap_eval.h"
 
+static void initialize();
+
 static void benchmark_all_hands();
 
 int main()
 {
-    doubletap_5_initialize("../data/DOUBLETAP_TABLE_5.dat");
-    doubletap_6_initialize("../data/DOUBLETAP_TABLE_6.dat");
-    doubletap_7_initialize("../data/DOUBLETAP_TABLE_7.dat");
+    initialize();
 
     benchmark_all_hands();
 
     return 0;
+}
+
+static void initialize()
+{
+    doubletap_5_initialize("../data/DOUBLETAP_TABLE_5.dat");
+    doubletap_6_initialize("../data/DOUBLETAP_TABLE_6.dat");
+    doubletap_7_initialize("../data/DOUBLETAP_TABLE_7.dat");
 }
 
 void next_hand(unsigned long long *x)

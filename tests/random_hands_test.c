@@ -12,21 +12,28 @@
 
 #define NUM_RANDOM_HANDS (1 << 10)
 
+static void initialize();
+
 static void initialize_random_hands();
 
 static void benchmark_random_hands();
 
 int main()
 {
-    doubletap_5_initialize("../data/DOUBLETAP_TABLE_5.dat");
-    doubletap_6_initialize("../data/DOUBLETAP_TABLE_6.dat");
-    doubletap_7_initialize("../data/DOUBLETAP_TABLE_7.dat");
+    initialize();
 
     initialize_random_hands();
 
     benchmark_random_hands();
 
     return 0;
+}
+
+static void initialize()
+{
+    doubletap_5_initialize("../data/DOUBLETAP_TABLE_5.dat");
+    doubletap_6_initialize("../data/DOUBLETAP_TABLE_6.dat");
+    doubletap_7_initialize("../data/DOUBLETAP_TABLE_7.dat");
 }
 
 static int deck[52];
