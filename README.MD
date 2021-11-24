@@ -8,6 +8,7 @@
 
 ### Build instructions:
 ```shell
+$ git clone https://github.com/themorlock/DoubleTapEvaluator.git
 $ cd DoubleTapEvaluator
 $ mkdir build
 $ cd build
